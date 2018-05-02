@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="formulário de envio e recebimento de e-mails">
+  <meta name="author" content="Ednelson Rodrigues - Analista de sistemas -">
+
+  <title>Contato</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+  <!-- Custom css -->
+  <link rel="stylesheet" type="text/css" href="css/mystyle.css">
+</head>
+
+<body>
+
+  <div class="container centro">
+    <form class="form-singin" action="enviar.php" method="post">
+      <div class="row">
+        <div class="form-group col-md-12">
+          <h3 class="titulo">Contate-nos</h3>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" class="form-control form-control-sm" 
+          placeholder="seu nome" required>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label>E-mail</label>
+          <input type="email" id="email" name="email" class="form-control form-control-sm" 
+          placeholder="seu e-mail" required>
+        </div>
+
+        <div class="form-group col-md-12">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" class="form-control form-control-sm" 
+          placeholder="mensagem" rows="4" cols="45" required></textarea>
+        </div>
+
+        <div class="form-group col-md-12">
+          <span class="float-right" style="font-size: 10px; color: red">Todos os campos são obrigatórios</span>
+        </div>
+          <input type="submit" name="submit" class="btn btn-outline-success btn-sm mbtn" value="Enviar sua mensagem">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
